@@ -1,0 +1,20 @@
+choice|1|What does an MZI convert into an output intensity change?|Relative phase between two arms|Splitting and recombining creates interference controlled by the arm phase difference.|Common detector dark current~Wafer diameter~Fiber jacket color
+cloze|1|At a constructive output of an ideal balanced MZI, T = cos²(Δφ/___).|2|The complementary output follows sin²(Δφ/2), given consistent coupler phase conventions.|4~π~8
+recall|2|Why is quadrature useful for analog MZI modulation?|The intensity transfer function has a large approximately linear local slope.|The linear region is limited; large signals introduce distortion.
+choice|2|At Δφ = π, what is T = cos²(Δφ/2)?|0|This specified output is dark; the ideal complementary port is bright.|0.5~1~2
+recall|2|What limits extinction in a real MZI besides phase error?|Splitter imbalance, unequal arm loss, polarization contamination, and stray background light.|Perfect phase control cannot cancel unequal interfering amplitudes completely.
+cloze|1|Vπ is the voltage change producing a ___ phase shift under the stated drive convention.|π|Single-arm and push-pull definitions must not be mixed.|2π~π/4~zero
+multi|2|Select contributors to MZI phase drift.|Temperature change~Effective-index change~Optical path-length change|A phase difference depends on both material and geometry.|An unchanged global phase alone~The label on a measurement file
+recall|2|What is the wavelength FSR of an unequal-arm MZI approximately?|FSR_λ ≈ λ²/(n_g ΔL), when dispersion is weak over one fringe.|Use group index; effective index alone neglects wavelength dependence.
+choice|2|At λ = 1550 nm, n_g = 4, and ΔL = 100 µm, approximate FSR?|6 nm|Using consistent micrometer units gives 1.55²/(4×100) µm = 0.006 µm.|60 nm~0.6 nm~600 nm
+recall|2|What does push-pull drive mean in an MZI?|Drive the arms with opposite phase changes to increase differential phase and potentially reduce chirp.|The voltage convention and phase-shifter symmetry determine the actual benefit.
+cloze|2|A phase shifter with smaller VπL has greater phase-shift ___ per length and voltage.|efficiency|VπL is useful but does not capture loss, capacitance, bandwidth, or drive power alone.|attenuation~darkness~temperature
+choice|2|An arm has Δn_eff = 0.001 over 775 µm at λ = 1550 nm. Phase change?|π radians|Δφ = 2π Δn_eff L/λ = 2π×0.001×775/1.55.|π/2 radians~2π radians~0.01π radians
+recall|3|Why does a longer phase shifter not always make a better modulator?|It lowers required voltage but can increase loss, capacitance, delay, and RF attenuation.|Optimize a link-level objective rather than Vπ alone.
+multi|2|Select quantities to record when reporting Vπ.|Wavelength~Bias and drive convention~Device length|Temperature and measurement frequency can matter as well.|Only corporate logo~Only wafer color
+recall|3|What does an MZI fringe measurement reveal about group index?|With known differential length, fringe spacing estimates n_g.|Calibration and dispersion affect the estimate; distinguish differential group delay from common delay.
+choice|2|For ideal equal-amplitude arms, which phase difference gives quadrature?|π/2 modulo π|The intensity is half-scale with nonzero slope at these bias points.|0 modulo 2π~π modulo 2π~2π modulo 2π
+order|2|Arrange an MZI bias calibration.|Sweep heater or bias~Measure output transfer curve~Locate quadrature~Maintain bias with feedback|Drift requires monitoring rather than a one-time nominal setting.
+recall|3|How can common-mode temperature shifts still change an unequal-arm MZI?|Unequal optical lengths turn a common index shift into a differential phase shift.|Balanced physical lengths also need matched thermo-optic responses to suppress drift.
+cloze|2|The extinction ratio in dB is 10 log10(P_max / ___).|P_min|Use powers. An amplitude ratio would use 20 log10.|P_max~wavelength~Vπ
+order|2|Arrange troubleshooting for poor MZI extinction.|Verify polarization and detector floor~Sweep full phase range~Check splitter balance and arm loss~Inspect coherent reflections|Separate measurement limits from device amplitude and phase errors.

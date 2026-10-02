@@ -1,0 +1,35 @@
+{
+  "name": "Lumen · Silicon photonics",
+  "short_name": "Lumen",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f7f7f0",
+  "theme_color": "#182d35",
+  "description": "A pocket silicon photonics study companion with 320 questions.",
+  "orientation": "any",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
